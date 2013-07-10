@@ -3,7 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 var fs = require('fs');
-var out=readFileSync('index.html');
+var out=fs.readFileSync('index.html');
 app.get('/', function(request, response) {
   response.send(out);
  // console.log('added');
