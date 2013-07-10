@@ -2,9 +2,11 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var fs = require('fs');
+//var fs = require('fs');
+//var out=readFileSync('index.html');
 app.get('/', function(request, response) {
-  response.send(fs.readFileSync(index.html));
+  response.send('Hello world');
+ // console.log('added');
   
 });
 
